@@ -12,6 +12,12 @@ class Myemployee{
         this.salary = salary;
     }
 
+    public Myemployee(int id, String name){
+        this.id = id;
+        this.name = name;
+        this.salary = 10000;
+    }
+
     // getter -->
     public int getId(){
         return id;
@@ -41,16 +47,20 @@ public class Main {
             System.out.print("Enter Name: ");
             String name = sc.nextLine();
 
-            System.out.print("Enter Salary: ");
-            double salary = sc.nextDouble();
+//            System.out.print("Enter Salary: ");
+//            double salary = sc.nextDouble();
 
-            emp[i] = new Myemployee(id, name, salary);
+            // emp[i] = new Myemployee(id, name, salary);
+
+            // Uses overloaded constructor -->
+            emp[i] = new  Myemployee(id, name);
         }
 
-        for(int i=0;i<n;i++){
-            System.out.println(emp[i].getId());
-            System.out.println(emp[i].getName());
-            System.out.println(emp[i].getSalary());
+        System.out.println("\nEmployee Details:");
+        for (int i = 0; i < n; i++) {
+            System.out.println("ID: " + emp[i].getId());
+            System.out.println("Name: " + emp[i].getName());
+            System.out.println("Salary: " + emp[i].getSalary());
         }
     }
 }
