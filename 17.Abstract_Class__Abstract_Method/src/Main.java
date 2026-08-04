@@ -1,33 +1,37 @@
-abstract class Parent{
-    public Parent(){
+abstract class Parent {
+    public Parent() {
         System.out.println("Parent Constructor");
     }
-    public void sayHello(){
+
+    public void sayHello() {
         System.out.println("Hello World");
     }
+
     abstract public void greet();
 }
 
-class Child extends Parent{
-    public Child(){
+class Child extends Parent {
+    public Child() {
         System.out.println("Child Constructor");
     }
-    public void greet(){
+
+    public void greet() {
         System.out.println("Namaste");
     }
 }
 
-abstract class Child2 extends Parent{
-    public Child2(){
+abstract class Child2 extends Parent {
+    public Child2() {
         System.out.println("Child2 Constructor");
     }
 }
 
-class Child3 extends Child2{
-    public Child3(){
+class Child3 extends Child2 {
+    public Child3() {
         System.out.println("Child3 Constructor");
     }
-    public void greet(){
+
+    public void greet() {
         System.out.println("Hello");
     }
 }
