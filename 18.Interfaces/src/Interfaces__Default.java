@@ -7,7 +7,7 @@ interface Camera {
     }
 }
 
-class samsung implements Camera {
+class samsungs implements Camera {
 
     public void takePhoto() {
         System.out.println("Samsung Photo");
@@ -23,7 +23,7 @@ public class Interfaces__Default {
 
     public static void main(String[] args) {
 
-        samsung s = new samsung();
+        samsungs s = new samsungs();
 
         s.takePhoto();
 
