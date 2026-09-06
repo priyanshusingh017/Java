@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-
-
 public class practice {
     public static int sumOfNatural(int n){
         if(n==1) return 1;
